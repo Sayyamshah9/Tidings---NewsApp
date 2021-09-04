@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity2"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageButton
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:id="@+id/backbtn"
+                        android:background="@drawable/backbtn"/>
+
+                    <ImageView
+                        android:layout_width="122dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/whitelogo"
+                        android:layout_marginLeft="12dp"/>
+
+                </LinearLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scaleType="fitXY"
+                android:id="@+id/thumbnail_img"
+                android:src="@drawable/image"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/full_title"
+                    android:text="@string/title"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_margin="9dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/publishAt"
+                    android:text="@string/publish"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:textSize="12sp"
+                    android:textColor="#C4C4C4"
+                    android:layout_margin="9dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/full_article"
+                android:text="@string/content"
+                android:fontFamily="@font/lato_light"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:layout_margin="9dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/full_article_btn"
+                android:text="@string/read_more"
+                android:textColor="@color/black"
+                android:layout_margin="5dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
